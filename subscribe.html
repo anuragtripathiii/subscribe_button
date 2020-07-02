@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>subscribe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fe1dc7696d.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/ccaffbd9f3.js"></script>
+    <style>
+
+        button{
+            position: absolute;
+            background: linear-gradient(to right,red,orangered);
+            width: 120px;
+            border:2px solid red;
+            height: 40px;
+            border-radius: 3%;
+            box-shadow: 0px 0px 1px 0px red;
+            color: white;
+            font-size: 13px;
+        }
+        button:hover{
+            background: #ff213e;
+            transition: background-color0.5s ease-in-out;
+            border-color: #ff213e;
+            box-shadow: 0.5px 0.5px 5px 0px red;
+        }
+         .mystyle {
+             margin-left: 130px;
+             position: absolute;
+             color: black;
+             font-size: 30px;
+             display: inline;
+             cursor: pointer;
+         }
+    </style>
+</head>
+
+<body>
+<div class="container jumbotron">
+    <button id="button" onclick="myfunction()">SUBSCRIBE</button>
+    <div id="myDIV" ><i class="fas fa-bell"></i></div>
+
+<script>
+
+    function myfunction() {
+        var element=document.getElementById("myDIV");
+        element.classList.add("mystyle")
+    }
+</script>
+
+
+</div>
+</body>
+</html>
+
+
+//next video we will develop advance button same as youtube with backend
